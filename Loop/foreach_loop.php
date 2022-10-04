@@ -9,13 +9,39 @@
 <body>
 <?php 
 
-$fruits = ["Apple", "Banana", "Mango"];
+// Index array
+$fruits = ["Apple", "Banana", "Mango", "Grape"];
 
-for ($i=0; $i < 3; $i++) { 
-    echo $fruits[$i];
+// Associative array
+// $fruits = [
+//     "fruit1"=>"Apple",
+//     "fruit2"=>"Banana",
+//     "fruit"=>"Mango",
+//     "fruit4"=>"Orange"
+// ];
+
+
+
+// $totalItems = count($fruits);
+// for ($i=0; $i < $totalItems; $i++) { 
+//     echo $fruits[$i];
+//     echo "<hr>";
+// }
+
+foreach ($fruits as $key=> $fruit) {
+    if ($fruit == "Mango") {
+        break;
+    }
+    echo $key. ": ".$fruit;
     echo "<hr>";
 }
 
+$a = array(1,2,3,5,8,13,21,34,55);
+$sum =0;
+for ($i=0; $i < 5; $i++) { 
+    $sum+=$a[$a[$i]];
+}
+echo $sum;
 
 ?>
 </body>
