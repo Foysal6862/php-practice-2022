@@ -8,6 +8,5 @@ function sum(...$numbers){
     }
     return $total;
 }
-
 echo sum(10,20,30)."<br />";
 echo sum(10,20,30, 100)."<br />";
